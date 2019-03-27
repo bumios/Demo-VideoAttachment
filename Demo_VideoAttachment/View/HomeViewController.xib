@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Demo_VideoAttachment" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="CxI-vg-wG7" id="wMt-bA-eRC"/>
+                <outlet property="galleryButton" destination="Uue-eC-i5T" id="K6a-Nt-Oem"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-eC-i5T">
+                    <rect key="frame" x="97.5" y="303.5" width="180" height="60"/>
+                    <color key="backgroundColor" red="0.68602846750000002" green="0.2274509804" blue="0.15646404110000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="YTL-Bg-jF5"/>
+                        <constraint firstAttribute="width" constant="180" id="x1K-vR-eea"/>
+                    </constraints>
+                    <state key="normal" title="Open GALLERY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxI-vg-wG7">
+                    <rect key="frame" x="97.5" y="393.5" width="180" height="60"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.58431372550000005" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Open CAMERA">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.25107893349999999" green="0.27471083400000001" blue="0.29171296949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CxI-vg-wG7" firstAttribute="top" secondItem="Uue-eC-i5T" secondAttribute="bottom" constant="30" id="Dkp-Ji-BTe"/>
+                <constraint firstItem="CxI-vg-wG7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K8E-8I-qdk"/>
+                <constraint firstItem="CxI-vg-wG7" firstAttribute="width" secondItem="Uue-eC-i5T" secondAttribute="width" id="L9o-FZ-cIz"/>
+                <constraint firstItem="CxI-vg-wG7" firstAttribute="height" secondItem="Uue-eC-i5T" secondAttribute="height" id="SD5-8c-Yp7"/>
+                <constraint firstItem="Uue-eC-i5T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ut9-IT-SOO"/>
+                <constraint firstItem="Uue-eC-i5T" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yZs-xa-Fly"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
