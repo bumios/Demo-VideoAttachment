@@ -17,17 +17,18 @@ final class VideoCollectionCell: UICollectionViewCell {
     // MARK: - Public
     func updateView(with viewModel: VideoCollectionCellViewModel) {
         guard let photoAsset = viewModel.photoAsset else { return }
-        let options = PHVideoRequestOptions()
-        options.version = .original
-        PHImageManager.default().requestPlayerItem(forVideo: photoAsset, options: options) { [weak self] (video, _) in
-            guard let this = self, let video = video else { return }
-            let player = AVPlayer(playerItem: video)
-            let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = this.thumbnailImageView.bounds
-            playerLayer.videoGravity = .resizeAspect
-            /// Add sublayer for main view
-            DispatchQueue.main.async {
-                this.thumbnailImageView.layer.addSublayer(playerLayer)
+        photoAsset.getURL { [weak self] url in
+            guard let this = self, let url = url else { return }
+            let avAsset = AVURLAsset(url: url)
+            let imageGenerator = AVAssetImageGenerator(asset: avAsset)
+            do {
+                let cgImage = try imageGenerator.copyCGImage(at: CMTime(value: 1, timescale: 60), actualTime: nil)
+                DispatchQueue.main.async {
+                    this.thumbnailImageView.image = UIImage(cgImage: cgImage)
+                }
+            } catch {
+                print("[ERROR] Generator thumbnail image")
+                print("Description: ", error.localizedDescription)
             }
         }
     }

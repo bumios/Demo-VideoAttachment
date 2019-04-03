@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53006556224DD85A0012E0D7 /* BumiosFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53006555224DD85A0012E0D7 /* BumiosFileManager.swift */; };
+		53006558224DD8800012E0D7 /* BumiosVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53006557224DD8800012E0D7 /* BumiosVideoManager.swift */; };
+		531363512253107A00A94BA4 /* PHAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531363502253107A00A94BA4 /* PHAssetExtension.swift */; };
+		532668632252181000F10515 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532668622252181000F10515 /* URLExtension.swift */; };
 		5327CF832248851F002B8D42 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */; };
 		5327CF8622488BB8002B8D42 /* VideoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327CF8422488BB8002B8D42 /* VideoGalleryViewController.swift */; };
 		5327CF8B22489715002B8D42 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327CF8A22489715002B8D42 /* PermissionManager.swift */; };
@@ -30,13 +34,15 @@
 		53BB4125224498FE00555A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB4124224498FE00555A5F /* AppDelegate.swift */; };
 		53BB412C224498FF00555A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BB412B224498FF00555A5F /* Assets.xcassets */; };
 		53BB412F224498FF00555A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53BB412D224498FF00555A5F /* LaunchScreen.storyboard */; };
-		53BB413D22449F8800555A5F /* VideoPlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB413B22449F8800555A5F /* VideoPlaygroundViewController.swift */; };
-		53BB413E22449F8800555A5F /* VideoPlaygroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53BB413C22449F8800555A5F /* VideoPlaygroundViewController.xib */; };
 		53F818AF224876FC0049EC05 /* CustomVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F818AD224876FC0049EC05 /* CustomVideoPlayerViewController.swift */; };
 		53F818B0224876FC0049EC05 /* CustomVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F818AE224876FC0049EC05 /* CustomVideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53006555224DD85A0012E0D7 /* BumiosFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumiosFileManager.swift; sourceTree = "<group>"; };
+		53006557224DD8800012E0D7 /* BumiosVideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumiosVideoManager.swift; sourceTree = "<group>"; };
+		531363502253107A00A94BA4 /* PHAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetExtension.swift; sourceTree = "<group>"; };
+		532668622252181000F10515 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
 		5327CF8422488BB8002B8D42 /* VideoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGalleryViewController.swift; sourceTree = "<group>"; };
 		5327CF8A22489715002B8D42 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
@@ -62,8 +68,6 @@
 		53BB412B224498FF00555A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53BB412E224498FF00555A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53BB4130224498FF00555A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53BB413B22449F8800555A5F /* VideoPlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaygroundViewController.swift; sourceTree = "<group>"; };
-		53BB413C22449F8800555A5F /* VideoPlaygroundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlaygroundViewController.xib; sourceTree = "<group>"; };
 		53F818AD224876FC0049EC05 /* CustomVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		53F818AE224876FC0049EC05 /* CustomVideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomVideoPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53006554224DD8490012E0D7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				53006555224DD85A0012E0D7 /* BumiosFileManager.swift */,
+				53006557224DD8800012E0D7 /* BumiosVideoManager.swift */,
+				5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */,
+				5327CF8A22489715002B8D42 /* PermissionManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		5327CF922248AEEA002B8D42 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +107,7 @@
 		5327CF9D2248C4D5002B8D42 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				53006554224DD8490012E0D7 /* Core */,
 				5327CF9E2248C4D5002B8D42 /* Extension */,
 			);
 			path = Library;
@@ -103,12 +119,14 @@
 				5327CFA12248C4D5002B8D42 /* CGFloatExtension.swift */,
 				5327CFA62248C4D5002B8D42 /* DoubleExtension.swift */,
 				5327CFA02248C4D5002B8D42 /* IntExtension.swift */,
+				531363502253107A00A94BA4 /* PHAssetExtension.swift */,
 				5327CFA52248C4D5002B8D42 /* StringExtension.swift */,
 				5327CFB42248C79F002B8D42 /* UICollectionViewExtension.swift */,
 				5327CFA42248C4D5002B8D42 /* UIFontExtension.swift */,
 				5327CFA22248C4D5002B8D42 /* UITableViewExtension.swift */,
 				5327CF9F2248C4D5002B8D42 /* UITextFieldExtension.swift */,
 				5327CFA32248C4D5002B8D42 /* UIViewExtension.swift */,
+				532668622252181000F10515 /* URLExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -164,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				53BB4124224498FE00555A5F /* AppDelegate.swift */,
-				5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */,
-				5327CF8A22489715002B8D42 /* PermissionManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -194,8 +210,6 @@
 				5327CF972248B16A002B8D42 /* VideoGalleryViewModel.swift */,
 				5327CF8422488BB8002B8D42 /* VideoGalleryViewController.swift */,
 				5327CF902248AE0E002B8D42 /* VideoGalleryViewController.xib */,
-				53BB413B22449F8800555A5F /* VideoPlaygroundViewController.swift */,
-				53BB413C22449F8800555A5F /* VideoPlaygroundViewController.xib */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -273,7 +287,6 @@
 				53BB412C224498FF00555A5F /* Assets.xcassets in Resources */,
 				53F818B0224876FC0049EC05 /* CustomVideoPlayerViewController.xib in Resources */,
 				5327CF962248AF06002B8D42 /* VideoCollectionCell.xib in Resources */,
-				53BB413E22449F8800555A5F /* VideoPlaygroundViewController.xib in Resources */,
 				5327CF8F22489CE0002B8D42 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,18 +300,21 @@
 			files = (
 				53BB4125224498FE00555A5F /* AppDelegate.swift in Sources */,
 				5327CFAA2248C4D5002B8D42 /* UITextFieldExtension.swift in Sources */,
+				531363512253107A00A94BA4 /* PHAssetExtension.swift in Sources */,
 				5327CFAF2248C4D5002B8D42 /* UIFontExtension.swift in Sources */,
 				53F818AF224876FC0049EC05 /* CustomVideoPlayerViewController.swift in Sources */,
 				5327CFB52248C79F002B8D42 /* UICollectionViewExtension.swift in Sources */,
 				5327CF8B22489715002B8D42 /* PermissionManager.swift in Sources */,
 				5327CF832248851F002B8D42 /* PhotoLibraryManager.swift in Sources */,
+				53006558224DD8800012E0D7 /* BumiosVideoManager.swift in Sources */,
+				53006556224DD85A0012E0D7 /* BumiosFileManager.swift in Sources */,
 				5327CF9C2248C079002B8D42 /* CustomVideoPlayerViewModel.swift in Sources */,
 				5327CFAE2248C4D5002B8D42 /* UIViewExtension.swift in Sources */,
 				5327CFAD2248C4D5002B8D42 /* UITableViewExtension.swift in Sources */,
 				5327CF9A2248B30A002B8D42 /* VideoCollectionCellViewModel.swift in Sources */,
 				5327CFAB2248C4D5002B8D42 /* IntExtension.swift in Sources */,
-				53BB413D22449F8800555A5F /* VideoPlaygroundViewController.swift in Sources */,
 				5327CF8E22489CE0002B8D42 /* HomeViewController.swift in Sources */,
+				532668632252181000F10515 /* URLExtension.swift in Sources */,
 				5327CFAC2248C4D5002B8D42 /* CGFloatExtension.swift in Sources */,
 				5327CFB02248C4D5002B8D42 /* StringExtension.swift in Sources */,
 				5327CFB12248C4D5002B8D42 /* DoubleExtension.swift in Sources */,

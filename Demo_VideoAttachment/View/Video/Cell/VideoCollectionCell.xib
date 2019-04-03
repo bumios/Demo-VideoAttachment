@@ -27,7 +27,7 @@
                         </view>
                         <blurEffect style="dark"/>
                     </visualEffectView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Inc-5f-Mwk">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Inc-5f-Mwk">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     </imageView>
                 </subviews>
