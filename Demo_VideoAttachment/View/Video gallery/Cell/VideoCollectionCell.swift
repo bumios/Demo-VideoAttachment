@@ -16,8 +16,8 @@ final class VideoCollectionCell: UICollectionViewCell {
 
     // MARK: - Public
     func updateView(with viewModel: VideoCollectionCellViewModel) {
-        guard let photoAsset = viewModel.photoAsset else { return }
-        photoAsset.getURL { [weak self] url in
+        guard let videoAsset = viewModel.videoAsset else { return }
+        videoAsset.getURL { [weak self] url in
             guard let this = self, let url = url else { return }
             let avAsset = AVURLAsset(url: url)
             let imageGenerator = AVAssetImageGenerator(asset: avAsset)

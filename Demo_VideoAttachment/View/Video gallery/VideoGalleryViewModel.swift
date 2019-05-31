@@ -12,7 +12,7 @@ import Photos
 final class VideoGalleryViewModel {
 
     // MARK: - Properties
-    var photos: PHFetchResult<PHAsset>? = nil
+    var videos: PHFetchResult<PHAsset>? = nil
 
     // MARK: - Public
     func fetchVideoFromLibrary() {
@@ -20,20 +20,20 @@ final class VideoGalleryViewModel {
             PhotoLibraryManager.requestAuthorization()
         } else {
             let fetchOptions = PHFetchOptions()
-            photos = PHAsset.fetchAssets(with: .video, options: fetchOptions)
+            videos = PHAsset.fetchAssets(with: .video, options: fetchOptions)
         }
     }
 
     func numberOfItems(in section: Int) -> Int {
-        guard let photos = photos else { return 0 }
-        return photos.count
+        guard let videos = videos else { return 0 }
+        return videos.count
     }
 
     func viewModelForCell(at indexPath: IndexPath) -> VideoCollectionCellViewModel {
-        return VideoCollectionCellViewModel(photoAsset: photos?.object(at: indexPath.row))
+        return VideoCollectionCellViewModel(videoAsset: videos?.object(at: indexPath.row))
     }
 
     func viewModelForVideoPlayer(at indexPath: IndexPath) -> CustomVideoPlayerViewModel {
-        return CustomVideoPlayerViewModel(photoAsset: photos?.object(at: indexPath.row))
+        return CustomVideoPlayerViewModel(videoAsset: videos?.object(at: indexPath.row))
     }
 }

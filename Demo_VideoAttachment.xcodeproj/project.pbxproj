@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53006556224DD85A0012E0D7 /* BumiosFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53006555224DD85A0012E0D7 /* BumiosFileManager.swift */; };
 		53006558224DD8800012E0D7 /* BumiosVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53006557224DD8800012E0D7 /* BumiosVideoManager.swift */; };
+		5304B24922A0C32100AD14A0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304B24822A0C32100AD14A0 /* UIImage+Gif.swift */; };
 		531363512253107A00A94BA4 /* PHAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531363502253107A00A94BA4 /* PHAssetExtension.swift */; };
 		532668632252181000F10515 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532668622252181000F10515 /* URLExtension.swift */; };
 		5327CF832248851F002B8D42 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		53006555224DD85A0012E0D7 /* BumiosFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumiosFileManager.swift; sourceTree = "<group>"; };
 		53006557224DD8800012E0D7 /* BumiosVideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumiosVideoManager.swift; sourceTree = "<group>"; };
+		5304B24822A0C32100AD14A0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		531363502253107A00A94BA4 /* PHAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetExtension.swift; sourceTree = "<group>"; };
 		532668622252181000F10515 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		5327CF822248851F002B8D42 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
@@ -127,8 +129,20 @@
 				5327CF9F2248C4D5002B8D42 /* UITextFieldExtension.swift */,
 				5327CFA32248C4D5002B8D42 /* UIViewExtension.swift */,
 				532668622252181000F10515 /* URLExtension.swift */,
+				5304B24822A0C32100AD14A0 /* UIImage+Gif.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5366E09B229F855D002DFDDD /* Video gallery */ = {
+			isa = PBXGroup;
+			children = (
+				5327CF922248AEEA002B8D42 /* Cell */,
+				5327CF972248B16A002B8D42 /* VideoGalleryViewModel.swift */,
+				5327CF8422488BB8002B8D42 /* VideoGalleryViewController.swift */,
+				5327CF902248AE0E002B8D42 /* VideoGalleryViewController.xib */,
+			);
+			path = "Video gallery";
 			sourceTree = "<group>";
 		};
 		53BB4118224498FE00555A5F = {
@@ -171,7 +185,8 @@
 		53BB413722449C5E00555A5F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				53BB413F22449F8B00555A5F /* Video */,
+				53F818B1224877000049EC05 /* Custom Video Player */,
+				5366E09B229F855D002DFDDD /* Video gallery */,
 				5327CF8C22489CE0002B8D42 /* HomeViewController.swift */,
 				5327CF8D22489CE0002B8D42 /* HomeViewController.xib */,
 			);
@@ -200,18 +215,6 @@
 				53BB412B224498FF00555A5F /* Assets.xcassets */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		53BB413F22449F8B00555A5F /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				53F818B1224877000049EC05 /* Custom Video Player */,
-				5327CF922248AEEA002B8D42 /* Cell */,
-				5327CF972248B16A002B8D42 /* VideoGalleryViewModel.swift */,
-				5327CF8422488BB8002B8D42 /* VideoGalleryViewController.swift */,
-				5327CF902248AE0E002B8D42 /* VideoGalleryViewController.xib */,
-			);
-			path = Video;
 			sourceTree = "<group>";
 		};
 		53F818B1224877000049EC05 /* Custom Video Player */ = {
@@ -320,6 +323,7 @@
 				5327CFB12248C4D5002B8D42 /* DoubleExtension.swift in Sources */,
 				5327CF8622488BB8002B8D42 /* VideoGalleryViewController.swift in Sources */,
 				5327CF982248B16A002B8D42 /* VideoGalleryViewModel.swift in Sources */,
+				5304B24922A0C32100AD14A0 /* UIImage+Gif.swift in Sources */,
 				5327CF952248AF06002B8D42 /* VideoCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

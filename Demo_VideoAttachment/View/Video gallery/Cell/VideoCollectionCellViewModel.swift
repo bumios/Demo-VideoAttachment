@@ -10,9 +10,9 @@ import Foundation
 import Photos
 
 final class VideoCollectionCellViewModel {
-    let photoAsset: PHAsset?
+    let videoAsset: PHAsset?
 
-    init(photoAsset: PHAsset?) {
-        self.photoAsset = photoAsset
+    init(videoAsset: PHAsset?) {
+        self.videoAsset = videoAsset
     }
 }
